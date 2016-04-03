@@ -1,0 +1,55 @@
+{
+  "index.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "js/utils/networkUtils.js",
+      "js/control/index.js",
+      "js/utils/class.js",
+      "fonts/mui.ttf",
+      "js/utils/MessageDispatch.js",
+      "js/utils/MessageDefines.js",
+      "js/vue.js",
+      "js/vuetest.js"
+    ],
+    "refer": [
+      "main.html",
+      "html/main.html"
+    ]
+  },
+  "main.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "js/control/main.js"
+    ],
+    "refer": []
+  },
+  "html/main.html": {
+    "resources": [
+      "js/control/main.js",
+      "fonts/mui.ttf",
+      "html/tab-webview-subpage-about.html",
+      "js/mui.min.js",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "html/tab-webview-subpage-setting.html",
+      "html/tab-webview-subpage-chat.html",
+      "html/tab-webview-subpage-contact.html",
+      "html/tab-webview-subpage-about.html"
+    ]
+  },
+  "html/guide.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "js/control/guide.js",
+      "js/resource.js"
+    ],
+    "refer": [
+      "html/main.html"
+    ]
+  }
+}

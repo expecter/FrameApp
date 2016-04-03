@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<script src="src/includes/vue.min.js"></script>
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>
+		<style>
+			.mui-table h4,.mui-table h5,.mui-table .mui-h5,.mui-table .mui-h6,.mui-table p{
+		        margin-top: 0;
+		    }
+		    .mui-table h4{
+		        line-height: 21px;
+		        font-weight: 500;
+		    }
+		
+		    .mui-table .oa-icon{
+		        position: absolute;
+		        right:0;
+		        bottom: 0;
+		    }
+		    .mui-table .oa-icon-star-filled{
+		        color:#f14e41;
+		    }
+		</style>
+		<script>
+			var stats = [
+  { label: 'A', value: 100 },
+  { label: 'B', value: 100 },
+  { label: 'C', value: 100 },
+  { label: 'D', value: 100 },
+  { label: 'E', value: 100 },
+  { label: 'F', value: 100 }
+]
+		</script>
+	</head>
+
+	<body>
+		 <div v-for="stat in stats" id="demo">
+        <label>{{stat.label}}</label>
+       </div>
+	</body>
+	<script src="src/includes/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+		new Vue({
+		  el: '#demo',
+		  data: {
+		    stats: stats
+		  },
+  })
+	</script>
+</html>

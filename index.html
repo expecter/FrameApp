@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Vue Webpack Example</title>
+    <script src="src/includes/mui.min.js"></script>
+    <link rel="stylesheet" href="css/mui.min.css">
+		<script src="src/includes/vue.min.js"></script>
+		<script>
+			var stats = [
+  { label: 'A', value: 100 },
+  { label: 'B', value: 100 },
+  { label: 'C', value: 100 },
+  { label: 'D', value: 100 },
+  { label: 'E', value: 100 },
+  { label: 'F', value: 100 }
+]
+		</script>
+  </head>
+  <body>
+    <app></app>
+    <script src="dist/build.js"></script>
+    <div v-for="stat in stats" id="demo">
+        <label>{{stat.label}}</label>
+       </div>
+  </body>
+  <script src="src/includes/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+		new Vue({
+		  el: '#demo',
+		  data: {
+		    stats: stats
+		  },
+  })
+	</script>
+</html>

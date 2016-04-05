@@ -12,7 +12,5 @@ var stats = [
 new Vue({
   el: 'body',
   components: { App },
-  data: {
-		    stats: stats
-		  },
+  data: {stats: stats}
 })
